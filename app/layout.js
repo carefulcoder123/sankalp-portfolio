@@ -1,14 +1,28 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import {  Sora, Moon_Dance, Urbanist } from "next/font/google";
+// ✅ Toastify import
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+
+
+const sora = Sora({
+  subsets: ['latin'],
+  variable: '--font-sora',
+  display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const urbanist = Urbanist({
+  subsets: ['latin'],
+  variable: '--font-urbanist',
+  display: 'swap',
+});
+
+const moonDance = Moon_Dance({
+  subsets: ['latin'],
+  variable: '--font-moon-dance',
+  weight: "400",
+  display: 'swap',
 });
 
 export const metadata = {
@@ -20,9 +34,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${sora.variable} ${moonDance.variable} ${urbanist.variable} font-sora antialiased bg-[#0F172A]`}
       >
         {children}
+        <ToastContainer position="top-right" autoClose={3000} />
       </body>
     </html>
   );
