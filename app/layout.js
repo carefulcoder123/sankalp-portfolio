@@ -29,7 +29,7 @@ export const metadata = {
   title: "Sankalp's Portfolio",
   description: "Website Showcasing the projects and skils of Sankalp",
   icons: {
-    icon: "/logo.png",  // ✅ this is what updates the browser tab logo
+    icon: "/logo-v2.png",  // ✅ this is what updates the browser tab logo
   },
 };
 

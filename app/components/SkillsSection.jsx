@@ -29,7 +29,7 @@ export default function SkillsSection() {
 
           <SplitText
             text="My Skills"
-            className="text-4xl md:text-5xl font-bold h-[60px] mb-16 text-center text-cyan-400"
+            className="text-4xl md:text-5xl font-bold h-[60px] mb-16 text-center text-cyan-500"
             delay={100}
             duration={0.6}
             ease="power3.out"
