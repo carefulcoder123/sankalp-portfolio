@@ -46,7 +46,7 @@ export default function ContactSection() {
             <div className="flex justify-center">
                 <SplitText
                     text="Get in Touch"
-                    className="text-4xl md:text-5xl font-bold h-[60px] mb-16 text-center text-gray-400"
+                    className="text-4xl md:text-5xl font-bold h-[60px] mb-16 text-center text-White"
                     delay={100}
                     duration={0.6}
                     ease="power3.out"

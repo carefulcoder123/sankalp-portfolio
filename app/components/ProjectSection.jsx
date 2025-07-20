@@ -53,7 +53,7 @@ export default function ProjectsSection() {
         className="text-3xl md:text-4xl font-bold mb-12 text-center text-indigo-400">
           My Work
         </motion.h2> */}
-
+ 
         <div className="flex justify-center">
 
           <SplitText
