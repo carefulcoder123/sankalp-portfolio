@@ -1,7 +1,3 @@
-/*
-	Installed from https://reactbits.dev/tailwind/
-*/
-
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -31,8 +27,10 @@ const SplitText = ({
     if (typeof window === "undefined" || !ref.current || !text) return;
 
     const el = ref.current;
-
     animationCompletedRef.current = false;
+
+    // Make the parent initially hidden
+    el.style.visibility = "hidden";
 
     const absoluteLines = splitType === "lines";
     if (absoluteLines) el.style.position = "relative";
@@ -95,6 +93,10 @@ const SplitText = ({
         },
       },
       smoothChildTiming: true,
+      onStart: () => {
+        // Show element when animation starts
+        el.style.visibility = "visible";
+      },
       onComplete: () => {
         animationCompletedRef.current = true;
         gsap.set(targets, {
@@ -146,6 +148,7 @@ const SplitText = ({
       style={{
         textAlign,
         wordWrap: "break-word",
+        visibility: "hidden", // Default hidden
       }}
     >
       {text}

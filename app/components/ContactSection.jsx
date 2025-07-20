@@ -5,6 +5,8 @@ import { Mail, Github, Linkedin } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { toast } from 'react-toastify';
 import SplitText from "./reactBits/TextAnimations/SplitText/SplitText";
+import AnimatedHeader from './contactHeader';
+
 
 export default function ContactSection() {
     const [formData, setFormData] = useState({
@@ -43,22 +45,8 @@ export default function ContactSection() {
 
     return (
         <section id="contact" className="px-4 md:px-20 py-20 scroll-mt-24">
-            <div className="flex justify-center">
-                <SplitText
-                    text="Get in Touch"
-                    className="text-4xl md:text-5xl font-bold h-[60px] mb-16 text-center text-White"
-                    delay={100}
-                    duration={0.6}
-                    ease="power3.out"
-                    splitType="chars"
-                    from={{ opacity: 0, y: 40 }}
-                    to={{ opacity: 1, y: 0 }}
-                    threshold={0.1}
-                    rootMargin="-100px"
-                    textAlign="center"
-                />
-            </div>
-
+           <AnimatedHeader />
+            
             <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
