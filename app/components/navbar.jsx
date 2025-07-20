@@ -19,7 +19,7 @@ export default function Navbar() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 24, opacity: 1 }} // 24px = top-6
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed w-full top-4 z-50 backdrop-blur-md bg-white/5 border-b border-white/10 md:rounded-full rounded-4xl max-w-7xl mx-auto left-0 right-0"
+      className="fixed md:w-full top-4 z-50 backdrop-blur-md bg-white/5 border-b border-white/10 md:rounded-full rounded-4xl w-[98%] md:max-w-7xl mx-auto left-0 right-0"
     >
       <div className="max-w-18xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
         {/* Logo Placeholder */}
