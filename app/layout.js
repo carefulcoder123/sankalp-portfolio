@@ -35,10 +35,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="bg-[#0F172A]">
+    <html lang="en">
       
       <body
-        className={`${sora.variable} ${moonDance.variable} ${urbanist.variable} font-sora antialiased `}
+        className={`${sora.variable} ${moonDance.variable} ${urbanist.variable} font-sora antialiased bg-[#0F172A]`}
       > 
         {children}
         <ToastContainer position="top-right" autoClose={3000} />
