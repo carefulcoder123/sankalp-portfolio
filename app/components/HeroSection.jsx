@@ -5,7 +5,7 @@ import DotGrid from "./reactBits/Backgrounds/DotGrid/DotGrid";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen w-[100%] md:w-full flex items-center justify-center px-4 md:px-16 py-28 md:py-18 overflow-hidden">
+    <section className="relative min-h-screen max-w-screen w-full flex items-center justify-center px-4 md:px-16 py-28 md:py-18 overflow-hidden">
 
   {/* DotGrid Background */}
   <div className="absolute inset-0 bg-neutral-950 -z-10">
