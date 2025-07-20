@@ -5,12 +5,12 @@ import { useState } from "react";
 
 export default function ProjectCard({ title, description, image, video, link, index }) {
   const [hovered, setHovered] = useState(false);
-
+ 
   return (
     <motion.div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="relative bg-neutral-900 rounded-xl rounded-t-[30px] overflow-hidden backdrop-blur-md shadow-lg border border-white/10 transition-all duration-300 hover:scale-[1.02]"
+      className="relative bg-neutral-900 rounded-xl rounded-t-[30px] overflow-hidden backdrop-blur-md shadow-lg border border-white/10 transition-all duration-300 hover:scale-[1.02] cursor-pointer"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -43,7 +43,7 @@ export default function ProjectCard({ title, description, image, video, link, in
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-indigo-400 hover:text-indigo-300"
+            className="text-neutral-500 hover:text-neutral-300"
             title="View Live"
           >
             <Globe size={20} />

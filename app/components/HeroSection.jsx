@@ -5,7 +5,7 @@ import DotGrid from "./reactBits/Backgrounds/DotGrid/DotGrid";
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 md:px-46 py-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center px-6 md:px-46 py-34 md:py-18 overflow-hidden">
 
       {/* DotGrid Background */}
       <div className="absolute inset-0 bg-neutral-950 -z-10">
@@ -29,15 +29,21 @@ export default function HeroSection() {
         {/* Text Section */}
         <div className="flex-1 text-center md:text-left">
           <motion.h1
-            className="text-4xl font-cursive md:text-7xl font-bold text-white mb-4"
+            className="text-4xl font-cursive md:text-7xl font-bold text-white mb-8"
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
             <span>Hi, I'm </span>
-            <span className="text-blue-400">
+            <span className="text-teal-500">
               <Typewriter
-                words={['Sankalp', 'a Web Developer', 'a Problem Solver']}
+              words={[
+                'Sankalp',
+                'a Web Developer',
+                'a Linux Administrator',
+                'an Tech Enthusiast',
+                'a Fast Learner',
+              ]}
                 loop={true}
                 cursor
                 cursorStyle="|"
@@ -54,18 +60,34 @@ export default function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            A passionate developer focused on crafting beautiful and functional web experiences.
+ A lifelong learner in tech — developing modern web apps and automating Linux systems with Ansible to build efficient and scalable solutions.
           </motion.p>
 
           <motion.a
-            href="#portfolio"
-            className="inline-block bg-indigo-500 hover:bg-indigo-600 text-white font-semibold px-7 py-4 rounded-full transition"
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
-          >
-            Explore My Work
-          </motion.a>
+  href="#portfolio"
+  className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full text-black font-semibold backdrop-blur-md border border-neutral-400 bg-neutral-100 hover:bg-neutral-200 transition-all duration-300 ease-in-out shadow-md hover:shadow-lg hover:scale-[1.03] group"
+  initial={{ opacity: 0, x: -30 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ delay: 0.3, duration: 0.4, ease: 'easeOut' }}
+>
+  <span className="text-base">Explore My Work</span>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth={1.5}
+    stroke="currentColor"
+    className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+    />
+  </svg>
+</motion.a>
+
+
         </div>
 
         {/* Image Section */}
