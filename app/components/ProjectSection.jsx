@@ -8,7 +8,7 @@ const projects = [
     description:
       "A music streaming UI clone built with Next.js and Tailwind. Responsive layout and smooth playback UI.",
     image: "/arroworks.png",
-    video: "/videos/arroWorks.mp4", // Optional
+    video: "https://res.cloudinary.com/dvfxxfjjm/video/upload/arroWorks_na18jo.mp4", // Optional
     link: "https://arro-works.vercel.app/",
   },
   {
@@ -16,7 +16,7 @@ const projects = [
     description:
       "A CRM web app to manage customer interactions using Spring Boot and Hibernate with dynamic charts.",
     image: "/swizzle.png",
-    video: "/videos/swizzle.mp4", // Optional
+    video: "https://res.cloudinary.com/dvfxxfjjm/video/upload/swizzle_xphvao.mp4", // Optional
     link: "https://swizzle-website.vercel.app/",
   },
   {
@@ -24,7 +24,7 @@ const projects = [
     description:
       "A modern portfolio website for a freelancer agency built using React and Framer Motion.",
     image: "/mauli_opticals.png",
-    video: "/videos/mauli_opticals.mp4", // Optional
+    video: "https://res.cloudinary.com/dvfxxfjjm/video/upload/mauli_opticals_ok10fn.mp4", // Optional
     link: "https://mauliopticals.thsite.top/login.php",
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     description:
       "A modern portfolio website for a freelancer agency built using React and Framer Motion.",
     image: "/sfitness.png",
-    video: "/videos/sfitness.mp4", // Optional
+    video: "https://res.cloudinary.com/dvfxxfjjm/video/upload/sfitness_hek9jv.mp4", // Optional
     link: "https://s-fitness-gules.vercel.app/",
   },
 ];
