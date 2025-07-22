@@ -10,7 +10,7 @@ export default function ProjectCard({ title, description, image, video, link, in
     <motion.div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="relative bg-neutral-900 rounded-xl rounded-t-[30px] overflow-hidden backdrop-blur-md shadow-lg border border-white/10 transition-all duration-300 hover:scale-[1.02] cursor-pointer"
+      className="relative bg-neutral-900 rounded-xl rounded-t-[30px] overflow-hidden backdrop-blur-md shadow-lg border border-white/10 transition-all duration-300 hover:scale-[1.02]"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
