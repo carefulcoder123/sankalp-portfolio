@@ -20,7 +20,8 @@ const projects = [
     description:
       "Created “Swizzle” — a vibrant café website featuring cocktails, enhanced with GSAP and scroll animations for an engaging, modern user experience.",
     image: "/swizzle.png",
-    video: "https://res.cloudinary.com/dvfxxfjjm/video/upload/swizzle_xphvao.mp4", // Optional
+   video: "https://res.cloudinary.com/dvfxxfjjm/video/upload/v1753975300/swizzle_xphvao.mp4", // Optional
+    
     link: "https://swizzle-website.vercel.app/",
   },
   {
